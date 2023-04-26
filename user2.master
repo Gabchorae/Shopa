@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user2.master.cs" Inherits="user2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 950px;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            width: 168px;
+            height: 77px;
+        }
+        .style4
+        {
+            width: 128px;
+            height: 77px;
+        }
+        .style5
+        {
+            width: 127px;
+            height: 77px;
+        }
+        .style6
+        {
+            width: 172px;
+            height: 77px;
+        }
+        .style8
+        {
+            width: 165px;
+        }
+        .style9
+        {
+            width: 63px;
+            height: 77px;
+        }
+        .style10
+        {
+            width: 142px;
+            height: 77px;
+        }
+    </style>
+</head>
+<body background="images/bg8.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td align="right" bgcolor="#F4759E">
+                    <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" 
+                        onclick="LinkButton1_Click" 
+                        style="font-weight: 700; font-family: Arial, Helvetica, sans-serif" 
+                        Visible="False">Order History</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Search" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="250px" 
+                        ImageUrl="~/images/logo.png" Width="1000px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style2">
+                        <tr align="center">
+                            <td bgcolor="#F4759E" class="style5">
+                                <asp:ImageButton ID="ImageButton12" runat="server" Height="58px" 
+                                    ImageUrl="~/images/RenderedImage.aspx - Copy.png" onclick="ImageButton12_Click" 
+                                    Width="103px" CausesValidation="False" />
+                            </td>
+                            <td bgcolor="#F4759E" class="style3">
+                                <asp:ImageButton ID="ImageButton13" runat="server" 
+                                    ImageUrl="~/images/aaab - Copy.png" CausesValidation="False" Height="57px" 
+                                    onclick="ImageButton13_Click1" Width="117px" />
+                            </td>
+                            <td bgcolor="#F4759E" class="style4">
+                                <asp:ImageButton ID="ImageButton14" runat="server" Height="59px" 
+                                    ImageUrl="~/images/poo.png" onclick="ImageButton14_Click1" Width="121px" 
+                                    CausesValidation="False" />
+                            </td>
+                            <td bgcolor="#F4759E" class="style6">
+                                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                                    <Items>
+                                        <asp:MenuItem ImageUrl="~/images/se.png">
+                                            <asp:MenuItem ImageUrl="~/images/br - Copy.png" NavigateUrl="~/srchbyrt.aspx">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem ImageUrl="~/images/bn.png" NavigateUrl="~/srchbyname.aspx">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem ImageUrl="~/images/ads.png" NavigateUrl="~/advsrch.aspx">
+                                            </asp:MenuItem>
+                                        </asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td bgcolor="#F4759E" class="style10">
+                                <asp:ImageButton ID="ImageButton15" runat="server" ImageUrl="~/images/cont.png" 
+                                    onclick="ImageButton15_Click" CausesValidation="False" Height="51px" 
+                                    Width="125px" />
+                            </td>
+                            <td bgcolor="#F4759E" class="style9">
+                                <asp:ImageButton ID="ImageButton16" runat="server" ImageUrl="~/images/frr.png" 
+                                    onclick="ImageButton16_Click" CausesValidation="False" />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td valign="top">
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <asp:ImageButton ID="ImageButton17" runat="server" ImageUrl="~/images/ass.png" 
+                        onclick="ImageButton17_Click" CausesValidation="False" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton18" runat="server" ImageUrl="~/images/loo.png" 
+                        onclick="ImageButton18_Click" CausesValidation="False" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton19" runat="server" ImageUrl="~/images/lou.png" 
+                        onclick="ImageButton19_Click" CausesValidation="False" Visible="False" />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton20" runat="server" ImageUrl="~/images/chpa.png" 
+                        onclick="ImageButton20_Click" CausesValidation="False" Visible="False" />
+                &nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton21" runat="server" CausesValidation="False" 
+                        ImageUrl="~/images/shca.png" onclick="ImageButton21_Click" Visible="False" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style2">
+                        <tr>
+                            <td class="style8" valign="top">
+                                <asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" 
+                                    style="margin-right: 23px">
+                                    <ParentNodeStyle Font-Bold="False" />
+                                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                                        HorizontalPadding="0px" VerticalPadding="0px" />
+                                    <Nodes>
+                                        <asp:TreeNode Text="Men" Value="Men">
+                                            <asp:TreeNode Text="Jean Pants" Value="Jean Pants"></asp:TreeNode>
+                                            <asp:TreeNode Text=" Coats &amp; Jackets" Value="Jeans Jacket"></asp:TreeNode>
+                                            <asp:TreeNode Text="Shirts" Value="Shirts"></asp:TreeNode>
+                                            <asp:TreeNode Text="T-Shirts" Value="T-Shirts"></asp:TreeNode>
+                                            <asp:TreeNode Text="Sherwani" Value="Sherwani"></asp:TreeNode>
+                                            <asp:TreeNode Text="Suits" Value="Suits"></asp:TreeNode>
+                                            <asp:TreeNode Text="Trousers" Value="Trousers"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Accesories" Value="Accesories">
+                                            <asp:TreeNode Text="Men" Value="Men"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </Nodes>
+                                    <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" 
+                                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />  
+                                </asp:TreeView>
+                            </td>
+                            <td valign="top">
+                                <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

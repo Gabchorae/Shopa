@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 950px;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            width: 168px;
+            height: 77px;
+        }
+        .style4
+        {
+            width: 128px;
+            height: 77px;
+        }
+        .style5
+        {
+            width: 127px;
+            height: 77px;
+        }
+        .style6
+        {
+            width: 172px;
+            height: 77px;
+        }
+        .style8
+        {
+            width: 165px;
+        }
+        .style9
+        {
+            width: 63px;
+            height: 77px;
+        }
+        .style10
+        {
+            width: 142px;
+            height: 77px;
+        }
+    </style>
+</head>
+<body background="images/bg8.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td align="right" bgcolor="#F4759E">
+                    
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="250px" 
+                        ImageUrl="~/images/banner.jpg" Width="1000px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style2">
+                        <tr align="center">
+                            <td bgcolor="#F4759E" class="style6">
+                                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                                    <Items>
+                                        <asp:MenuItem ImageUrl="~/images/se.png">
+                                            <asp:MenuItem ImageUrl="~/images/br - Copy.png" NavigateUrl="~/srchbyrt.aspx">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem ImageUrl="~/images/bn.png" NavigateUrl="~/srchbyname.aspx">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem ImageUrl="~/images/ads.png" NavigateUrl="~/advsrch.aspx">
+                                            </asp:MenuItem>
+                                        </asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                          
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td valign="top">
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Welcome 
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style2">
+                        <tr>
+                            <td class="style8" valign="top">
+                                <asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" 
+                                    style="margin-right: 23px">
+                                    <ParentNodeStyle Font-Bold="False" />
+                                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                                        HorizontalPadding="0px" VerticalPadding="0px" />
+                                    <Nodes>
+                                        <asp:TreeNode Text="Men" Value="Men">
+                                            <asp:TreeNode Text="Jean Pants" Value="Jean Pants"></asp:TreeNode>
+                                            <asp:TreeNode Text=" Coats &amp; Jackets" Value="Jeans Jacket"></asp:TreeNode>
+                                            <asp:TreeNode Text="Shirts" Value="Shirts"></asp:TreeNode>
+                                            <asp:TreeNode Text="T-Shirts" Value="T-Shirts"></asp:TreeNode>
+                                            <asp:TreeNode Text="Sherwani" Value="Sherwani"></asp:TreeNode>
+                                            <asp:TreeNode Text="Suits" Value="Suits"></asp:TreeNode>
+                                            <asp:TreeNode Text="Trousers" Value="Trousers"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Accesories" Value="Accesories">
+                                            <asp:TreeNode Text="Men" Value="Men"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </Nodes>
+                                    <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" 
+                                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                </asp:TreeView>
+                            </td>
+                            <td valign="top">
+                                <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

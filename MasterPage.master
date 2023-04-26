@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            height: 19px;
+        }
+        .style5
+        {
+            width: 950px;
+        }
+        body
+        {
+        	margin:0;
+        }
+        
+        .style6
+        {
+            width: 313px;
+            font-size: 35pt;
+            font-weight: bold;
+            font-family: Calibri;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif">
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" cellpadding="0" cellspacing="0" class="style1">
+            <tr bgcolor="#F0F9F7">
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td align="right">
+                                <table align="center" class="style1">
+                                    <tr>
+                                        <td align="left">
+                                            Welcome
+                                            <asp:Label ID="Label1" runat="server"></asp:Label>
+                                            &nbsp;&nbsp;
+                                        </td>
+                                         <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" 
+                                                Font-Underline="False" onclick="LinkButton10_Click" Visible="False">Logout</asp:LinkButton>
+&nbsp;&nbsp;
+                                        <td>
+                                            <asp:LinkButton ID="LinkButton12" runat="server" CausesValidation="False" 
+                                                Font-Underline="False" onclick="LinkButton12_Click" Visible="False">Order 
+                                            History</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </td>
+                                        <td align="right">
+&nbsp;
+                                            <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="False" 
+                                                Font-Underline="False" onclick="LinkButton9_Click" Visible="False">Change 
+                                            Password</asp:LinkButton>
+&nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton10" runat="server" CausesValidation="False" 
+                                                Font-Underline="False" onclick="LinkButton10_Click" Visible="False">Logout</asp:LinkButton>
+&nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton11" runat="server" CausesValidation="False" 
+                                                Font-Underline="False" onclick="LinkButton11_Click" Visible="False">Show 
+                                            Cart</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" Font-Underline="False" 
+                                                onclick="LinkButton7_Click" Visible="False">Login</asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton8" runat="server" CausesValidation="False" Font-Underline="False" 
+                                                onclick="LinkButton8_Click" Visible="False">SignUp</asp:LinkButton>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="#529496">
+                <td class="style4">
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td align="center">
+                                <asp:Image ID="Image1" runat="server" Height="215px" 
+                                    ImageUrl="~/images/logo.png" Width="650px" />
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr bgcolor="#F0F9F7">
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                        <tr align="center">
+                            <td bgcolor="#00779C" width="158">
+                                <asp:LinkButton ID="LinkButton1" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700" CausesValidation="False" 
+                                    onclick="LinkButton1_Click">Home</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#FD5201" width="158">
+                                <asp:LinkButton ID="LinkButton2" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700" CausesValidation="False" 
+                                    onclick="LinkButton2_Click">About Us</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#FFE329" width="158">
+                                <asp:LinkButton ID="LinkButton3" runat="server" Font-Underline="False" 
+                                    style="color: #000000; font-weight: 700" CausesValidation="False" 
+                                    onclick="LinkButton3_Click">Products</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#00779C" width="158">
+                                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                                    <StaticMenuItemStyle Font-Bold="True" ForeColor="White" />
+                                    <Items>
+                                        <asp:MenuItem Text="Search">
+                                            <asp:MenuItem NavigateUrl="~/srchbyrt.aspx" Text="By Rate">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/srchbyname.aspx" Text="By Name">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/advsrch.aspx" Text="Advance Search">
+                                            </asp:MenuItem>
+                                        </asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td bgcolor="#FD5201" width="158">
+                                <asp:LinkButton ID="LinkButton5" runat="server" Font-Underline="False" 
+                                    style="color: #FFFFFF; font-weight: 700" CausesValidation="False" 
+                                    onclick="LinkButton5_Click">Feedback</asp:LinkButton>
+                            </td>
+                            <td bgcolor="#FFE329" width="158">
+                                <asp:LinkButton ID="LinkButton6" runat="server" Font-Underline="False" 
+                                    style="color: #000000; font-weight: 700" CausesValidation="False" 
+                                    onclick="LinkButton6_Click">Contact Us</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+          <tr bgcolor="#529496"><td>
+        <table align="center" cellpadding="0" cellspacing="0" class="style5" bgcolor="White">
+            <tr>
+                <td>
+                    <table align="center" class="style1">
+                        <tr>
+                            <td valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>  </td></tr>
+          <tr bgcolor="#F0F9F7"><td bgcolor="#DDEFF7">
+              <table align="center" cellpadding="0" cellspacing="0" class="style5">
+                  <tr>
+                      <td align="center">
+                          Created by : Gabriel Yordanov</td>
+                            </tr>
+                        </table>
+                    </td></tr></table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>images/AD1.jpg</ImageUrl>
+    <NavigateUrl>http://www.google.com</NavigateUrl>
+    <AlternateText>Google Advertisement</AlternateText>
+    <Impressions>100</Impressions>
+ </Ad>
+  <Ad>
+    <ImageUrl>images/ad2.gif</ImageUrl>
+    <NavigateUrl>http://www.msn.com</NavigateUrl>
+    <AlternateText>msn Advertisement</AlternateText>
+    <Impressions>200</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>images/ad4.gif</ImageUrl>
+    <NavigateUrl>http://www.facebook.com</NavigateUrl>
+    <AlternateText>facebook Advertisement</AlternateText>
+    <Impressions>70</Impressions>
+  </Ad>
+  
+  
+  
+  
+  
+  
+  
+</Advertisements>
